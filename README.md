@@ -10,6 +10,6 @@ To perform the track like in the video (https://www.youtube.com/watch?v=kApOyP7H
 Feel free to change the code and contribute to a better track. :) 
 
 
-**Happy live-coding! <3
+**Happy live-coding! <3**
 
-**-- MzZavaa --
+**-- MzZavaa --**
