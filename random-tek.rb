@@ -37,25 +37,26 @@ end
 
 live_loop :bassline do
   
+  a = 0.5
+  
   7.times do
-    sample :drum_cymbal_pedal, amp: 0.6
-    sample :drum_cymbal_closed, amp: 0.7
+    sample :drum_cymbal_pedal, amp: a
+    sample :drum_cymbal_closed, amp: a
     #todo - change filepath
     #sample "---/hardstyle-force-sample-pack/Hardstyle_Force Sample_Kit/Gated Kicks/GTKick("+['01','02','03','04','05','06','07','08','09','10'].choose+").wav", amp: 0.5
     #sample "---/hardstyle-force-sample-pack/Hardstyle_Force Sample_Kit/FX/fx02.wav", rate: 1.1, amp: 1.1
     #sample "---/hardstyle-force-sample-pack/Hardstyle_Force Sample_Kit/FX/fx03.wav", rate: 1.1, amp: 1.1
-    
     sleep 1
   end
   sleep 0.5
-  sample :drum_cymbal_closed, amp: 0.7
+  sample :drum_cymbal_closed, amp: a
   2.times do
-    sample :drum_cymbal_closed, amp: 0.7
+    sample :drum_cymbal_closed, amp: a
     #todo - change filepath
     #sample "---/hardstyle-force-sample-pack/Hardstyle_Force Sample_Kit/FX/fx02.wav", rate: 1.1, amp: 1.1
     sleep 0.25
   end
-  sample :drum_cymbal_pedal, amp: 0.9
+  sample :drum_cymbal_pedal, amp: a
   
 end
 
@@ -64,7 +65,7 @@ live_loop :harder do
   kick = rrand_i(1,96)
   8.times do
     #todo - change filepath
-    sample "---/hardstyle-force-sample-pack/Hardstyle_Force Sample_Kit/Hardstyle Kicks/kick hardstyle ("+kick.to_s+").wav", amp: 0.5
+    #sample "---/hardstyle-force-sample-pack/Hardstyle_Force Sample_Kit/Hardstyle Kicks/kick hardstyle ("+kick.to_s+").wav", amp: 0.5
     sleep 1
   end
   sleep 16
@@ -86,7 +87,7 @@ live_loop :melody do
   sleep 16
   8.times do
     #todo - change filepath
-    sample "----/hardstyle-force-sample-pack/Hardstyle_Force Sample_Kit/Leads/nlead_"+['a3','a4','a5','4','5','6'].choose+".wav", release: 0.2, attack: 0.2, sustain: 9, amp: 0.5
+    #sample "----/hardstyle-force-sample-pack/Hardstyle_Force Sample_Kit/Leads/nlead_"+['a3','a4','a5','4','5','6'].choose+".wav", release: 0.2, attack: 0.2, sustain: 9, amp: 0.5
     sleep 8
   end
   
